@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>File Metadata Microservice</title>
+  </head>
+  <body>
+    <!-- "/upload" and "post" link in with the program.js file, and the form has to be multipart/form-data in order for multer to work -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <!-- the label for the input with the name "file" -->
+      <label for="file">Submit a file to view its filesize in bytes.</label></br></br>
+      <!-- With the input type="file", the button automatically says "Choose File", and next to it "No file chosen"
+      until a file is chosen and it replaces it with the file name automatically -->
+      <input type="file" id="file" name="file">
+      <!-- When the user hits the submit button, it activates the post request to the /upload route -->
+      <input type="submit">
+    </form>
+  </body>
+</html>
