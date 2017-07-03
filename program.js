@@ -18,6 +18,6 @@ app.post('/upload', upload.single('file'), function (req, res) {
 })
 
 //create the server on port 3000 with a callback function so we know when the server is running
-app.listen(3000, function() {
-  console.log('Congregation is running on port 3000');
+app.listen(process.env.PORT || 3000, function() {
+  console.log('Congregation is running');
 });
